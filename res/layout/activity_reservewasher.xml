@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Reservewasher">
+
+
+    <LinearLayout
+        android:id="@+id/relayni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="110dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wnameni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Washer"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="10dp"
+            android:text="___"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/wstatusni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:text="status"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reservebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:text="Reserve" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

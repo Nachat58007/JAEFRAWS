@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9d9d9d"
+    tools:context=".Uprofile">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnedit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="108dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="UnknownId" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/prophone"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="216dp"
+            android:text="Phone number"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/promail"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/prophone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/namepro"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/promail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/propic"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/namepro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.296"
+            app:srcCompat="@drawable/avatar" />
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
